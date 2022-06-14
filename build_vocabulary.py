@@ -41,4 +41,4 @@ for f in os.listdir("medical-reports/train"):
     words = read_document(path)
     voc.update(words)
 
-write_vocabulary(voc, "vocabulary.txt", 2000)
+write_vocabulary(voc, "vocabulary.txt", 3000)

@@ -76,7 +76,11 @@ In the task of classification of medical rewievs Multinomial model was used beca
 \begin{equation}
     \hat{y} = \argmax_{y \in \{0, ..., k-1\}} \left( \sum^{n - 1}_{j = 0} x_j \log \pi_{y, j} \right) + \log P(y),
 \end{equation}
-where $x_j$ is the value of feature $j$, $\pi_{y, j}$ is the learnt probability of the occurance the word $j$ in class $y$, $P(y)$ is the probability of the class $y$.
+where $x_j$ is the feature vector, $\pi_{y, j}$ is the learnt probability of the occurance the word $j$ in class $y$, $P(y)$ is the probability of the class $y$.
+
+The main objective of the training is to find the probabilities $\pi_{y, j}$.
+
+
 
 \subsection{Neural Network}
 \label{subsection:neural_network}
